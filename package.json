@@ -1,0 +1,25 @@
+{
+  "name": "chronos-suite",
+  "version": "0.2.0",
+  "description": "Chronos OS layer + Viz + Resonance architecture (TypeScript)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "ts-node-esm src/index.ts",
+    "start": "node --enable-source-maps dist/index.js",
+    "example:svg": "ts-node-esm src/examples/svg-demo.ts",
+    "example:resonance": "ts-node-esm src/examples/resonance-demo.ts",
+    "cli:gen": "ts-node-esm src/cli/generate-diagram.ts"
+  },
+  "keywords": ["chronos", "resonance", "svg", "diagram"],
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.2",
+    "@types/node": "^18.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
